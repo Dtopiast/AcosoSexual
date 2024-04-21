@@ -95,7 +95,7 @@ a{
   background-image: url("https://dtopiast.github.io/Practica-Css-Acoso-Sexual-/img/image2.jpg");
   background-size: cover;
   background-position: center ;
-  width: 35%;
+  width: 50%;
   height: 400px;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -109,11 +109,13 @@ a{
   border: #333;
   border-radius: 10px;
   padding: 20px;
-  margin: 20px 20px;
-  background-color: #f3e5f5;
+  margin: 20px 40px;
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   height: 300px;
+  border-radius: 10px;
+  background-color: #f3e5f5;
+
 }
 
 .test {
@@ -124,6 +126,7 @@ a{
   margin: 20px 0;
   border-radius: 10px;
   padding: 20px;
+  background-color: #f4ebf5
   
 }
 
@@ -319,6 +322,8 @@ a{
     width: 100%;
     max-width: 900px;
     height: 600px;
+    border-radius: 10px;
+  background-color: #f3e5f5;
   }
   .test {
     display: flex;
