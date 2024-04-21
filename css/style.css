@@ -308,6 +308,18 @@ a{
     padding: 20px;
     margin: 20px;
   }
+  .section__principal {
+    justify-content: space-between;
+    align-items: center;
+    border: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 20px;
+    background-color: #f3e5f5;
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+  }
   .test {
     display: flex;
     flex-wrap: wrap;
