@@ -10,6 +10,7 @@ a{
 .container {
   margin: 0 auto;
   padding: 0 20px;
+  width: 80%;
 }
 
 .header {
@@ -24,7 +25,7 @@ a{
 
 .header--title {
   margin-left: 15px;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .navbar {
@@ -47,6 +48,7 @@ a{
   text-decoration: none;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
+  font-size: 20px;
 }
 
 .navbar__item a:hover {
@@ -76,14 +78,14 @@ a{
 }
 
 .section__banner_info--tittle {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
   color: #b29dd7;
   text-align: center;
 }
 
 .section__banner_info--content {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: #f2eaffef;
   text-align: justify;
@@ -136,7 +138,9 @@ a{
   text-align: justify;
   font-size: 16px;
 }
-
+.section__principal--content a{
+  color: #673ab7;
+}
 .section__general_types,
 .section__specific_types {
   text-align: center;
@@ -239,7 +243,7 @@ a{
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items:center;
     padding: 10px;
   }
 
