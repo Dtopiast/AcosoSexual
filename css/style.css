@@ -67,7 +67,7 @@ border-radius: 10px;
   margin: 20px;
   border-radius: 10px;
   width: 40%;
-  background-image: url("Practica-Css-Acoso-Sexual-/img/image1.jpg");
+  background-image: url("https://dtopiast.github.io/Practica-Css-Acoso-Sexual-/img/image1.jpg");
   background-size: cover;
   height:500px;
 }
@@ -88,7 +88,7 @@ border-radius: 10px;
     
 }
 .section__banner__image{
-  background-image: url("/img/image2.jpg");
+  background-image: url("https://dtopiast.github.io/Practica-Css-Acoso-Sexual-/img/image2.jpg");
   background-size: cover;
   width:  50%; 
   height:500px;
