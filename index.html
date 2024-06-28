@@ -8,6 +8,30 @@
     <title>Acoso Sexual</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Código JavaScript aquí
+
+        // Destacar el elemento activo en la barra de navegación
+        const navbarItems = document.querySelectorAll(".navbar__item a");
+        navbarItems.forEach(item => {
+          item.addEventListener("click", function() {
+            navbarItems.forEach(i => i.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+
+        // Desplegar más información sobre tipos de acoso
+        const tiposItems = document.querySelectorAll(".sidebar__list--item a");
+        tiposItems.forEach(item => {
+          item.addEventListener("click", function() {
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -17,10 +41,10 @@
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a href="https://www.inegi.org.mx/tablerosestadisticos/vcmm/" target="_blank">Estadisticas</a>
+              <a href="https://www.inegi.org.mx/tablerosestadisticos/vcmm/" target="_blank">Estadísticas</a>
             </li>
             <li class="navbar__item">
-              <a href="https://www.facebook.com/cetis111tuxpanoficial/" target="_blank">Quienes somos?</a>
+              <a href="https://www.facebook.com/cetis111tuxpanoficial/" target="_blank">¿Quiénes somos?</a>
             </li>
             <li class="navbar__item">
               <a href="https://www.gob.mx/sep/acciones-y-programas/denuncia-el-hostigamiento-y-abuso-sexual" target="_blank">Reporta</a>
@@ -31,9 +55,9 @@
       <main>
         <section class="section__banner" id="que-es">
           <div class="section__banner_info">
-            <h2 class="section__banner_info--tittle">Que es el acoso sexual?</h2>
+            <h2 class="section__banner_info--tittle">¿Qué es el acoso sexual?</h2>
             <p class="section__banner_info--content">
-              Comportamiento verbal no verbal o físico no deseado de índole sexual con efecto de atentar contra una persona.
+              Comportamiento verbal, no verbal o físico no deseado de índole sexual con efecto de atentar contra una persona.
             </p>
           </div>
           <div class="section__banner__image"></div>
@@ -41,13 +65,13 @@
 
         <div class="test">
           <aside class="sidebar">
-            <h3 class="sidebar__tittle">Indice</h3>
+            <h3 class="sidebar__tittle">Índice</h3>
             <ul class="sidebar__list">
-              <li class="sidebar__list--item"><a href="#que-es">1 Que es el acoso sexual?</a> </li>
+              <li class="sidebar__list--item"><a href="#que-es">1 ¿Qué es el acoso sexual?</a> </li>
               <li class="sidebar__list--item"><a href="#dirigido">2 Acoso sexual hacia las mujeres</a></li>
-              <li class="sidebar__list--item"><a >3 Tipos de acoso</a></li>
-              <li class="sidebar__list--item"><a href="#generales"> 3.1 Generales</a></li>
-              <li class="sidebar__list--item"><a href="#especificos"> 3.2 Específicos</a></li>
+              <li class="sidebar__list--item"><a href="#tipos">3 Tipos de acoso</a></li>
+              <li class="sidebar__list--item"><a href="#generales">3.1 Generales</a></li>
+              <li class="sidebar__list--item"><a href="#especificos">3.2 Específicos</a></li>
             </ul>
           </aside>
 
